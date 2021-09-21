@@ -6,8 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/10or/holland1
 
 PRODUCT_COPY_FILES += \
-    vendor/10or/holland1/proprietary/vendor/bin/gx_fpcmd:$(TARGET_COPY_OUT_VENDOR)/bin/gx_fpcmd \
-    vendor/10or/holland1/proprietary/vendor/bin/gx_fpd:$(TARGET_COPY_OUT_VENDOR)/bin/gx_fpd \
     vendor/10or/holland1/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/10or/holland1/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/10or/holland1/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
@@ -74,23 +72,6 @@ PRODUCT_COPY_FILES += \
     vendor/10or/holland1/proprietary/vendor/firmware/modem_config/S88537EC1/reliance_mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_config/S88537EC1/reliance_mcfg_sw.mbn \
     vendor/10or/holland1/proprietary/vendor/firmware/modem_config/S88537EC1/row_mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_config/S88537EC1/row_mcfg_sw.mbn \
     vendor/10or/holland1/proprietary/vendor/firmware/modem_config/S88537EC1/vodafone_mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_config/S88537EC1/vodafone_mcfg_sw.mbn \
-    vendor/10or/holland1/proprietary/vendor/lib/hw/fingerprint.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.msm8937.so \
-    vendor/10or/holland1/proprietary/vendor/lib/libcom_fingerprints_service.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom_fingerprints_service.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/hw/fingerprint.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.msm8937.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/hw/fingerprint.goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/hw/gxfingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gxfingerprint.default.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libcom_fingerprints_service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom_fingerprints_service.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libfp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfp_client.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libfpnav.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpnav.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libfpservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpservice.so \
-    vendor/10or/holland1/proprietary/vendor/bin/mm-qcamera-app:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-app \
-    vendor/10or/holland1/proprietary/vendor/bin/mm-qjpeg-dec-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qjpeg-dec-test \
-    vendor/10or/holland1/proprietary/vendor/bin/mm-qjpeg-enc-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qjpeg-enc-test \
-    vendor/10or/holland1/proprietary/vendor/bin/mm-qomx-idec-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qomx-idec-test \
-    vendor/10or/holland1/proprietary/vendor/bin/mm-qomx-ienc-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qomx-ienc-test \
-    vendor/10or/holland1/proprietary/vendor/bin/mm-vidc-omx-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-vidc-omx-test \
-    vendor/10or/holland1/proprietary/vendor/bin/qjpeg-dma-test:$(TARGET_COPY_OUT_VENDOR)/bin/qjpeg-dma-test \
-    vendor/10or/holland1/proprietary/vendor/etc/permission/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permission/android.hardware.fingerprint.xml \
     vendor/10or/holland1/proprietary/vendor/lib/hw/camera.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8937.so \
     vendor/10or/holland1/proprietary/vendor/lib/libactuator_ad5816g.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ad5816g.so \
     vendor/10or/holland1/proprietary/vendor/lib/libactuator_ad5823.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ad5823.so \
@@ -285,7 +266,6 @@ PRODUCT_COPY_FILES += \
     vendor/10or/holland1/proprietary/vendor/lib/libjpegdhw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdhw.so \
     vendor/10or/holland1/proprietary/vendor/lib/libjpegdmahw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdmahw.so \
     vendor/10or/holland1/proprietary/vendor/lib/libjpegehw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegehw.so \
-    vendor/10or/holland1/proprietary/vendor/lib/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-omxcore.so \
     vendor/10or/holland1/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
     vendor/10or/holland1/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
     vendor/10or/holland1/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
@@ -435,16 +415,7 @@ PRODUCT_COPY_FILES += \
     vendor/10or/holland1/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
     vendor/10or/holland1/proprietary/vendor/lib/libtm_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtm_interface.so \
     vendor/10or/holland1/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
-    vendor/10or/holland1/proprietary/vendor/lib/libts_detected_face_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_detected_face_hal.so \
-    vendor/10or/holland1/proprietary/vendor/lib/libts_face_beautify_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_face_beautify_hal.so \
     vendor/10or/holland1/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
-    vendor/10or/holland1/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/hw/fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.default.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libgf_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_algo.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libgoodixfingerprintd_binder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgoodixfingerprintd_binder.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-omxcore.so \
     vendor/10or/holland1/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_frame_algorithm.so \
     vendor/10or/holland1/proprietary/vendor/lib64/libmmcamera2_is.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_is.so \
     vendor/10or/holland1/proprietary/vendor/lib64/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_q3a_core.so \
@@ -457,12 +428,7 @@ PRODUCT_COPY_FILES += \
     vendor/10or/holland1/proprietary/vendor/lib64/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboptizoom.so \
     vendor/10or/holland1/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/10or/holland1/proprietary/vendor/lib64/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libseemore.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libts_detected_face_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libts_detected_face_hal.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libts_face_beautify_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libts_face_beautify_hal.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libubifocus.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.fingerprint@1.0.so \
-    vendor/10or/holland1/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so
+    vendor/10or/holland1/proprietary/vendor/lib64/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libubifocus.so
 
 PRODUCT_PACKAGES += \
     libts_detected_face_hal \
